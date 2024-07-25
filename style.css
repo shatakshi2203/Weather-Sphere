@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2575fc;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #6a11cb;
+  transform: translateY(-2px);
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+.details, .map {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.details {
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container p {
+  margin: 10px 0;
+}
+
+.container span {
+  color: #2575fc;
+  font-weight: 600;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.forecast {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.forecast h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #6a11cb;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.forecast-container div {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-container div p {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .forecast-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .forecast-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
