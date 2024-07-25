@@ -27,8 +27,7 @@ Welcome to the Weather Forecasting Web App! This app helps you get upto date wea
 3. Ensure Internet Connection: Make sure you have an active internet connection to fetch weather data.
 4. Start Searching: Enter city names in the search bar and get weather updates!
 
- 🌐 Live Demo
-Check out the live version of the app on Netlify: [WeatherSphere App](https://supriyajaiswal43.github.io/WeatherSphere/)
+
 
  🙏 Credits
  OpenWeatherMap API: For providing weather data.
